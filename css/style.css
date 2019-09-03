@@ -1,0 +1,74 @@
+
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('../fonts/lato/Lato-Light.eot');
+    src: url('../fonts/lato/Lato-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/lato/Lato-Light.ttf') format('truetype'),
+        url('../fonts/lato/Lato-Light.svg#Lato-Light') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important; 
+}
+
+html, body{
+	font-family: 'Lato-Light';
+	margin: 0px;
+}
+/*All device*/
+header{
+	color: white;
+	background-color: black;
+	height: 70px;
+}
+footer{
+	color: white;
+	background-color: black;
+}
+header .logo{
+	float: left;
+	height: 50px;
+	padding: 10px 0px;
+}
+header .logo img, footer .logo img{
+	height: 100%;
+	width: auto;
+}
+.fa{
+	padding: 0px 10px;
+}
+.user-detail{
+	float: right;
+	height: 70px;
+	display: table;
+	overflow: hidden
+}
+footer{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 30px;
+}
+.copyright{
+	float: right;
+	height: 30px;
+	display: table;
+	overflow: hidden
+}
+
+
+/*All device*/
+@media only screen and (min-width: 1024px) {
+ 	.container{
+ 		width: 90%;
+ 		margin: auto;
+	}
+}
+
+/*Tab and mobile*/
+@media only screen and (max-width: 1023px) {
+ 	.container{
+ 		width: 100%;
+	}
+}
