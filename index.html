@@ -23,6 +23,24 @@
 
 </head>
 <body >
+	<!-- The Modal -->
+	<div id="userswap-modal" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+				<h2>Change User</h2>
+			</div>
+			<div class="modal-body">
+				<input type="text" name="username" placeholder="Enter User Name" id="user-input">
+				<input type="submit" value="submit" id="user_select">
+			</div>
+			
+		</div>
+
+	</div>
+
 	
 	<!-- header -->
 	<header>
@@ -34,7 +52,7 @@
 				<div class="user-detail">
 					<div style="display: table-cell; vertical-align: middle;">
 						<div>
-						<i class="fa fa-user-circle-o" aria-hidden="true"></i>Abhimanyu
+						<i class="fa fa-user-circle-o" aria-hidden="true"></i><span id="header-username">Abhimanyu</span>
 						</div>
 					</div>
 				</div>
@@ -45,10 +63,66 @@
 	<!-- page contents -->
 	<div class="page-contents">
 		<div class="container">
+			<div class="left-nav">
+				<div class="switch-bar">
+					<ul>
+						<li>
+							<div><i class="fa fa-newspaper-o" aria-hidden="true"></i>Post Feed</div>
+						</li>
+						<li >
+							<div id="userswap-call"><i class="fa fa-exchange" aria-hidden="true"></i>Change User</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="right-page-content">
+				<div class="right-outer-block">
+					<div class="create-post-block">
+						<div class="create-post-header">
+							Create Post
+						</div>
+						<div class="create-post-content">
+							<div class="fa-icon-block">
+								<i class="fa fa-user-circle-o post-user-image" aria-hidden="true"></i>
+							</div>
+							<div class="textbox-block">
+								<textarea name="create-post-textbox" cols="50" rows="5" spellcheck="false" id="create-input-field" placeholder="Enter write something here..."></textarea>
+							</div>
+							
+						</div>
+						<div class="create-post-footer">
+							<div id="create-post-btn"><i class="fa fa-paper-plane" aria-hidden="true"></i>Post Now</div>
+						</div>
+					</div>
+
+					<!-- posts -->
+
+					<div class="active-post-block">
+						<div class="active-post-header">
+							<i class="fa fa-user-circle-o active-user-image" aria-hidden="true"></i><span class="posted-user">abhi</span>
+						</div>
+						<div class="active-post-content">
+							<div class="image-block" id="post-image">
+								
+							</div>
+							<div class="text-block">
+								<div id="post-texts">sgsdgsdg</div>
+							</div>
+							
+						</div>
+						<div class="active-post-footer">
+							<div id="post-comment-btn"><i class="fa fa-comments" aria-hidden="true"></i>Comment</div>
+						</div>
+						<div class="active-post-comment-block slider" style="display: none" id="show-comments">
+							<input type="text" name="commnet" placeholder="Enter your comment..." id="user-comment">
+						</div>
+					</div>
+					
+				</div>
+			</div>
 
 		</div>
 	</div>
-
 	<!-- footer -->
 	<footer>
 		<div class="container">
