@@ -258,7 +258,7 @@ ul {
 	min-height: 50;
 	display: block !important;
 }
-.user-comment-input{
+.user-comment-input, .user-reply-input{
 	width: 75%;
 	margin: auto;
 	height: 30px;
@@ -266,7 +266,7 @@ ul {
 	padding: 0px 15px;
 }
 .feed-comments{
-	border-top: 1px solid #d0cccc;
+	border: 1px solid #b5b2b2;
 	padding-top: 10px;
 	margin-top: 5px;
 
@@ -278,7 +278,7 @@ ul {
 	margin: 0px auto;
 	text-align: left;
 }
-.submit_comment{
+.submit_comment, .submit_reply{
 	padding: 9px;
     border: 0px;
 }
@@ -299,6 +299,9 @@ ul {
 	width: 100%;
 	background-color: transparent;
 
+}
+.user-reply-input, .submit_reply{
+	margin: 10px 0px;
 }
 /*All device*/
 @media only screen and (min-width: 1024px) {
