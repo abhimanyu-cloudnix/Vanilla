@@ -135,7 +135,18 @@ header .logo img, footer .logo img{
 	display: table;
 	overflow: hidden
 }
-
+#userswap-call, #left-post-feed{
+	width: 100%;
+    background: rgba(218, 210, 210, 0.55);
+    border: 0px;
+    padding: 10px 5px;
+    text-align: left;
+    cursor: pointer;
+}
+#left-post-feed{
+	background: #fff;
+	border:1px solid #eee;
+}
 .copyright{
 	float: right;
 	height: 30px;
@@ -151,17 +162,14 @@ ul {
 .page-contents .left-nav .switch-bar ul li{
 	padding: 10px 0px;
 }
-.page-contents .left-nav .switch-bar ul li:first-child{
-	background: #fff;
-	border:1px solid #eee;
-}
+
 .page-contents .left-nav .switch-bar ul li div	{
 	padding: 0px 10px;
 	cursor: pointer;
 	width: 100%;
 }
-.page-contents .left-nav .switch-bar ul li:hover{
-	background: #e0e0e0;
+.page-contents .left-nav button:hover{
+	background: #d0e0e0 !important;
 }
 .right-outer-block{
 	padding: 10px 40px;
@@ -209,8 +217,9 @@ ul {
 #create-post-btn{
 	width: 100%;
 	cursor: pointer;
-	padding: 10px 5px;
-	z-index: 100;
+	padding: 10px 0px;
+	border: 0px;
+    background: #f3f1f1;
 }
 
 .right-page-content{
@@ -227,12 +236,13 @@ ul {
 	padding: 10px 5px;
 	background: #ececec;
 	font-weight: bold;
+	color: #080835;
 }
 .active-post-content{
 	padding: 20px 20px;
 }
 .active-post-footer{
-	background: #ececec;
+	background: #f3f3f3;
 	font-weight: bold;
     clear: both;
     text-align: center;
@@ -242,6 +252,8 @@ ul {
 	cursor: pointer;
 	padding: 10px 5px;
 	z-index: 100;
+	border: 0px;
+    background: #f3f1f1;
 }
 .slider {
 	overflow-y: hidden;
@@ -266,7 +278,7 @@ ul {
 	padding: 0px 15px;
 }
 .feed-comments{
-	border: 1px solid #b5b2b2;
+	border: 1px solid #d0cdcd;
 	padding-top: 10px;
 	margin-top: 5px;
 
@@ -277,6 +289,7 @@ ul {
 	width: 95%;
 	margin: 0px auto;
 	text-align: left;
+	color: #080835;
 }
 .submit_comment, .submit_reply{
 	padding: 9px;
@@ -300,8 +313,33 @@ ul {
 	background-color: transparent;
 
 }
+.submit_replied_reply{
+	border: 0px;
+    padding: 10px;
+    width: 100%;
+    background-color: transparent;
+    border-top: 1px solid #f1e4e4;
+    margin-top: 5px;
+}
 .user-reply-input, .submit_reply{
 	margin: 10px 0px;
+}
+.feed-reply{
+	padding: 10px 10px 10px 40px;
+	text-align: left;
+}
+.feed-reply .feed-reply-block .fa, .feed-reply .feed-reply-user{
+	color:#080835;
+	font-weight: bold;
+}
+.feed-reply .feed-reply-user{
+	margin-right: 30px;
+}
+.feed-reply-text{
+	color: #423d3d;
+}
+input:focus, button:focus{
+	outline : 1px solid #349ca7 !important;
 }
 /*All device*/
 @media only screen and (min-width: 1024px) {
@@ -323,5 +361,29 @@ ul {
 @media only screen and (max-width: 1023px) {
  	.container{
  		width: 100%;
+	}
+	.page-contents .left-nav .switch-bar ul li div{
+		padding: 0px 0px;
+	}
+	ul{
+		margin-right: 40px;
+	}
+	#header-username{
+		padding-right: 20px;
+	}
+	.copyright{
+		padding-right: 20px;
+	}
+}
+/*mobile*/
+@media only screen and (max-width: 768px) {
+	.textbox-block{
+		width: 70%;
+	}
+	.post-user-image{
+		font-size: 10vw !important;
+	}
+	.fa-icon-block{
+		width: 20%;
 	}
 }
